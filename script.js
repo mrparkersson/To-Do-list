@@ -45,9 +45,9 @@ document.querySelector('#push').onclick = function () {
             </div>
         `;
 
-    let current_tasks = document.querySelectorAll('.delete');
-    for (let i = 0; i < current_tasks.length; i++) {
-      current_tasks[i].onclick = function () {
+    let currentTask = document.querySelectorAll('.delete');
+    for (let i = 0; i < currentTask.length; i += 1) {
+      currentTask[i].onclick = function () {
         this.parentNode.remove();
       };
     }
