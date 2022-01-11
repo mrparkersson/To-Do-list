@@ -21,6 +21,7 @@ for (let i = 0; i < todoList.length; i += 1) {
     
           <ul>
           <li><input type="checkbox">${todoList[i].description}</li>
+          <span id="line"></span>
           </ul>
           
           `;
@@ -30,7 +31,7 @@ for (let i = 0; i < todoList.length; i += 1) {
 // ADD AND REMOVE TODO
 
 document.querySelector('#push').onclick = function () {
-  if (document.querySelector('#newtask input').value.length == 0) {
+  if (document.querySelector('#newtask input').value.length === 0) {
     alert('Please Enter a Task');
   } else {
     document.querySelector('#tasks').innerHTML += `
@@ -44,8 +45,8 @@ document.querySelector('#push').onclick = function () {
             </div>
         `;
 
-    var current_tasks = document.querySelectorAll('.delete');
-    for (var i = 0; i < current_tasks.length; i++) {
+    let current_tasks = document.querySelectorAll('.delete');
+    for (let i = 0; i < current_tasks.length; i++) {
       current_tasks[i].onclick = function () {
         this.parentNode.remove();
       };
