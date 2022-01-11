@@ -45,7 +45,7 @@ document.querySelector('#push').onclick = function () {
             </div>
         `;
 
-    let currentTask = document.querySelectorAll('.delete');
+    const currentTask = document.querySelectorAll('.delete');
     for (let i = 0; i < currentTask.length; i += 1) {
       currentTask[i].onclick = function () {
         this.parentNode.remove();
