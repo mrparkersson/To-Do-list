@@ -4,12 +4,12 @@ const todoList = [
   {
     description: 'wash the dishes',
     completed: false,
-    index: Math.random(),
+    index: '1',
   },
   {
     description: 'Complete To Do',
     completed: false,
-    index: Math.random(),
+    index: '2',
   },
 ];
 
